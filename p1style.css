@@ -1,0 +1,407 @@
+/* General Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F3F3F3;
+    color: #333;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    padding: 0 20px;
+  }
+  
+  main {
+    margin: 20px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  h1, h2, h3 {
+    color: #444;
+  }
+  
+  h1 {
+    border-bottom: 2px solid #444;
+    padding-bottom: 10px;
+  }
+  
+  h2 {
+    margin-top: 20px;
+  }
+  
+  p {
+    line-height: 1.6;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  /* Specific Styles */
+  
+  #home {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  #Design Process {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  
+  #Model {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  #UX {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  #sketch {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  #lowfi {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  #HiFi {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  #FinalProd {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .medium-zoom-image {
+    cursor: zoom-in;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: #f5f5f5;
+}
+
+header {
+    background: #6D99A7;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    margin: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+section#home img {
+    max-width: 50%;
+}
+
+section#Model img,
+section#UX img,
+section#sketch img,
+section#lowfi img,
+section#hifi img {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+section#sketch,
+section#lowfi,
+section#hifi {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section#sketch div,
+section#lowfi div,
+section#hifi div {
+    flex: 1 1 auto;
+    margin: 10px;
+}
+
+section#FinalProd img {
+    max-width: 30%;
+    transition: all 0.5s ease;
+}
+
+section#FinalProd img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background: #6D99A7;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}  
+#home {
+    display: flex;
+    align-items: center; /* This will vertically center the items */
+    justify-content: center; /* This will horizontally center the items */
+    background-color: #6D99A7;
+}
+
+#home .image-container {
+    flex-basis: 40%; /* This will take up 50% of the container's width */
+    text-align: center; /* This will center the image */
+    padding: 20px; /* This adds some spacing */
+}
+
+#home .image-container img {
+    max-width: 75%; /* This will make sure the image is not larger than its container */
+    height: auto; /* This will maintain the image's aspect ratio */
+}
+
+#home .text-container {
+    flex-basis: 60%; /* This will take up 50% of the container's width */
+}
+
+#sketch {
+    display: flex;
+    align-items: center; /* This will vertically center the items */
+    justify-content: center; /* This will horizontally center the items */
+}
+
+#sketch .image-container {
+    flex-basis: 40%; /* This will take up 50% of the container's width */
+    text-align: center; /* This will center the image */
+    padding: 20px; /* This adds some spacing */
+}
+
+#sketch .image-container img {
+    max-width: 100%; /* This will make sure the image is not larger than its container */
+    height: auto; /* This will maintain the image's aspect ratio */
+}
+
+#sketch .text-container {
+    flex-basis: 60%; /* This will take up 50% of the container's width */
+}
+
+#lowfi {
+    display: flex;
+    align-items: center; /* This will vertically center the items */
+    justify-content: center; /* This will horizontally center the items */
+}
+
+#lowfi .image-container {
+    flex-basis: 40%; /* This will take up 50% of the container's width */
+    text-align: center; /* This will center the image */
+    padding: 20px; /* This adds some spacing */
+}
+
+#lowfi .image-container img {
+    max-width: 100%; /* This will make sure the image is not larger than its container */
+    height: auto; /* This will maintain the image's aspect ratio */
+}
+
+#lowfi .text-container {
+    flex-basis: 60%; /* This will take up 50% of the container's width */
+}
+
+#HiFi {
+    display: flex;
+    align-items: center; /* This will vertically center the items */
+    justify-content: center; /* This will horizontally center the items */
+}
+
+#HiFi .image-container {
+    flex-basis: 40%; /* This will take up 50% of the container's width */
+    text-align: center; /* This will center the image */
+    padding: 20px; /* This adds some spacing */
+}
+
+#HiFi .image-container img {
+    max-width: 100%; /* This will make sure the image is not larger than its container */
+    height: auto; /* This will maintain the image's aspect ratio */
+}
+
+#HiFi .text-container {
+    flex-basis: 60%; /* This will take up 50% of the container's width */
+}
+
+.image-row {
+    display: flex;
+    overflow-x: auto;
+    width: 80vw; /* adjust this value to match the width of other containers on your page */
+    padding: 20px; /* adjust this value to control the amount of space around the images */
+    justify-content: space-around; /* this will distribute the images evenly within the container */
+    margin: 0 auto; /* this centers the container horizontally */
+}
+
+.image-row img {
+    flex: 0 0 auto;
+    width: auto;
+    height: 601px; /* adjust this value to control the height of the images */
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+/* Bigger text next to images in the divs */
+#HiFi .text-container p,
+#lowfi .text-container p,
+#sketch .text-container p {
+  font-size: 20px;
+}
+
+/* Differentiate each section */
+section {
+  background-color: #f4f4f4;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+header {
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    padding: 20px 15%; /* Adjust the second value for horizontal padding */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px; /* Add space at the top */
+    margin-right: 20px;
+    margin-left: 20px;
+}
+  
+  
+  .animated-title {
+    font-size: 2em;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6;
+    }
+  }
+
+
+#Design .image-container {
+    overflow: hidden; /* Hides anything that goes outside this container */
+    display: flex;
+    justify-content: center; /* Aligns items horizontally in the center */
+    align-items: center; /* Aligns items vertically in the center */
+}
+
+#Design .my-image {
+    position: relative;
+    left: -60px; /* Move the image to the left. Adjust this value to hide the white space. */
+    top:-80px;
+}
+
+#HiFi .text-container H2,
+#lowfi .text-container H2,
+#sketch .text-container H2 {
+  font-size: 60px;
+}
+
+#HiFi .text-container H3,
+#lowfi .text-container H3,
+#sketch .text-container H3 {
+  font-size: 40px;
+}
+
+#home .text-container H2{
+    color: rgb(243, 237, 237);
+}
+
+#home .text-container p{
+    color: rgb(209, 226, 230);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+  }
+  
+  .home-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+  }
+  
+  .home-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .home-button:active {
+    background-color: #004085;
+  }

@@ -1,0 +1,578 @@
+body {
+    --h1Font: "Karla";
+    --h1Color: #292B3D;
+    --h1Weight: bold;
+    --h1Style: normal;
+    
+
+    --h1Size: 42px;
+    --h1Height: 44px;
+
+    --h2Font: "Karla";
+    --h2Color: #9fb9c0;
+    --h2Weight: normal;
+    --h2Style: italic;
+    
+
+    --h2Size: 28px;
+    --h2Height: 30px;
+
+    --h3Font: "Karla";
+    --h3Color: #353738;
+    --h3Weight: bold;
+    --h3Style: normal;
+    
+
+    --h3Size: 21px;
+    --h3Height: 25px;
+
+    --h4Font: "Karla";
+    --h4Color: #4CAACD;
+    --h4Weight: normal;
+    --h4Style: normal;
+    
+
+    --h4Size: 17px;
+    --h4Height: 20px;
+
+    --p1Font: "Karla";
+    --p1Color: #353738;
+    --p1Weight: normal;
+    --p1Style: normal;
+    
+
+    --p1Size: 16px;
+    --p1Height: 21px;
+
+    --p2Font: "Karla";
+    --p2Color: #4CAACD;
+    --p2Weight: normal;
+    --p2Style: normal;
+    
+
+    --p2Size: 16px;
+    --p2Height: 21px;
+
+    --projectTitleFont: "Karla";
+    --projectTitleColor: #292B3D;
+    --projectTitleWeight: bold;
+    --projectTitleStyle: normal;
+    
+
+    --projectTitleSize: 35px;
+    --projectTitleHeight: 36px;
+
+    --projectSubTitleFont: "Karla";
+    --projectSubTitleColor: #292B3D;
+    --projectSubTitleWeight: normal;
+    --projectSubTitleStyle: normal;
+    
+
+    --projectSubTitleSize: 16px;
+    --projectSubTitleHeight: 18px;
+
+    --buttonFont: "Karla";
+    --buttonColor: #292B3D;
+    --buttonWeight: 400;
+    --buttonStyle: normal;
+    --borderColor: #292B3D33;
+
+    --buttonSize: 16px;
+    --buttonHeight: 16px;
+
+    }
+
+    h1 {
+        font-family: var(--h1Font);
+        color: var(--h1Color);
+        font-weight: var(--h1Weight);
+        font-style: var(--h1Style);
+        font-size: var(--h1Size);
+        line-height: var(--h1Height);
+    }
+    
+    h2 {
+        font-family: var(--h2Font);
+        color: var(--h2Color);
+        font-weight: var(--h2Weight);
+        font-style: var(--h2Style);
+        font-size: var(--h2Size);
+        line-height: var(--h2Height);
+    }
+    h3 {
+        font-family: var(--h3Font);
+        color: var(--h3Color);
+        font-weight: var(--h3Weight);
+        font-style: var(--h3Style);
+        font-size: var(--h3Size);
+        line-height: var(--h3Height);
+    }
+    p {
+        font-family: var(--pFont);
+        color: var(--pColor);
+        font-weight: var(--pWeight);
+        font-style: var(--pStyle);
+        font-size: var(--pSize);
+        line-height: var(--pHeight);
+    }
+    /* Styling for the entire section */
+section#home {
+    background-color: #c1e6f4;  /* Soft background color */
+    display: flex;  /* Flex layout to have image and title side by side */
+    justify-content: space-around;  /* Distribute items evenly */
+    align-items: center;  /* Align vertically in the middle */
+    padding: 20px;  /* Add some padding around */
+    flex-wrap: wrap;  /* Wrap items if not enough space */
+}
+
+/* Styling for the flex container */
+div#home.flex-container {
+    flex: 1;  /* Take as much space as available */
+    max-width: 50%;  /* But don't take more than half of the screen */
+    padding: 20px;  /* Add some padding around */
+}
+
+/* Styling for the title */
+div#home.flex-container h1 {
+    font-size: 2.5em;  /* Make the title bigger */
+    letter-spacing: 0.05em;  /* Add some spacing between the letters */
+}
+
+/* Styling for the subtitle */
+div#home.flex-container h2 {
+    color: #666;  /* Softer color for the font */
+}
+
+/* Styling for the image container */
+div.image-container {
+    flex: 1;  /* Take as much space as available */
+    max-width: 50%;  /* But don't take more than half of the screen */
+}
+
+/* Styling for the image */
+div.image-container img {
+    width: 100%;  /* Make image responsive */
+    height: auto;  /* Keep aspect ratio */
+}
+
+/* Styling for the entire section */
+section#Design {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #F0F0F0; /* This is a soft background color */
+    font-family: var(--p1Font);
+    color: var(--p1Color);
+    padding-left: 100px; /* Adjust this value as needed */
+    padding-right: 100px; /* Adjust this value as needed */
+}
+
+/* Styling for the grid container */
+div#Design .grid {
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the grid */
+}
+
+/* Styling for the text container */
+div.text-container {
+    line-height: 1.5; /* Line spacing */
+    text-align: justify; /* Align text to both left and right margins */
+}
+
+/* Styling for the paragraph */
+div.text-container p {
+    margin-bottom: 20px; /* Add some space after each paragraph */
+}
+
+/* Styling for the title */
+div.text-container .p2 {
+    font-weight: var(--h2Weight);
+    font-size: var(--h2Size);
+    color: var(--h2Color);
+    margin-bottom: 10px; /* Add some space after the title */
+}
+
+/* Styling for the sub title */
+div.text-container h3 {
+    font-weight: var(--h3Weight);
+    font-size: var(--h3Size);
+    color: var(--h3Color);
+    margin-bottom: 10px; /* Add some space after the subtitle */
+}
+
+section#personas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  section#personas .text-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .persona {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+  
+  .persona .text-container {
+    margin-left: 20px;
+  }
+  
+  .persona:nth-child(even) .text-container {
+    order: -1;
+  }
+  
+  .persona img {
+    max-width: 300px;
+    height: auto;
+  }
+
+  section#personas {
+    background-color: #FAFAFA; /* You can change this to any color you like */
+    padding: 20px; /* Adjust as needed */
+}
+
+#personas .p2 {
+    font-family: var(--h2Font);
+    color: var(--h2Color);
+    font-size: var(--h2Size);
+    line-height: var(--h2Height);
+    text-align: center;
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+#personas h3 {
+    font-family: var(--h3Font);
+    color: var(--h3Color);
+    font-size: var(--h3Size);
+    line-height: var(--h3Height);
+    text-align: center;
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+#personas .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjust as needed */
+}
+
+#personas .text-container {
+    max-width: 600px; /* Adjust as needed */
+    margin: 20px; /* Adjust as needed */
+}
+
+#personas .image-container {
+    max-width: 600px; /* Adjust as needed */
+    margin: 20px; /* Adjust as needed */
+}
+
+#personas h4 {
+    font-family: var(--h4Font);
+    color: var(--h4Color);
+    font-size: var(--h4Size);
+    line-height: var(--h4Height);
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+#personas p {
+    font-family: var(--p1Font);
+    color: var(--p1Color);
+    font-size: var(--p1Size);
+    line-height: var(--p1Height);
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+section#sketch {
+    background-color: #F0F0F0; /* You can change this to any color you like */
+    padding: 20px; /* Adjust as needed */
+}
+
+#sketch .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjust as needed */
+    align-items: center; /* This will vertically align the image and the text */
+}
+
+#sketch .image-container {
+    flex: 1 1 40%; /* This will make the image take up 40% of the container's width */
+    margin: 20px; /* Adjust as needed */
+    text-align: center;
+}
+
+#sketch .image-container img {
+    max-width: 60%; /* This will ensure the image does not overflow its container */
+    height: auto; /* This will maintain the image's aspect ratio */
+}
+
+#sketch .text-container {
+    flex: 1 1 40%; /* This will make the text take up 40% of the container's width */
+    margin: 40px; /* Adjust as needed */
+}
+
+#sketch .p2 {
+    font-family: var(--h2Font);
+    color: var(--h2Color);
+    font-size: var(--h2Size);
+    line-height: var(--h2Height);
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+#sketch h3 {
+    font-family: var(--h3Font);
+    color: var(--h3Color);
+    font-size: var(--h3Size);
+    line-height: var(--h3Height);
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+#sketch p {
+    font-family: var(--p1Font);
+    color: var(--p1Color);
+    font-size: var(--p1Size);
+    line-height: var(--p1Height);
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+section#lowfi {
+    background-color: #FAFAFA; /* You can change this to any color you like */
+    padding: 20px; /* Adjust as needed */
+}
+
+#lowfi .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    gap: 20px; /* This adds spacing between the image and text containers */
+}
+
+#lowfi .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* This will create a responsive grid with two images per row */
+    gap: 20px; /* This adds spacing between the images */
+    width: 100%;
+}
+
+#lowfi .image-grid img {
+    max-width: 100%; /* This will ensure the image does not overflow its container */
+    height: auto; /* This will maintain the image's aspect ratio */
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#lowfi .text-container {
+    width: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#lowfi .p2 {
+    font-family: var(--h2Font);
+    color: var(--h2Color);
+    font-size: var(--h2Size);
+    line-height: var(--h2Height);
+    margin-bottom: 10px; /* Adjust as needed */
+}
+#lowfi h3 {
+    font-family: var(--h3Font);
+    color: var(--h3Color);
+    font-size: var(--h3Size);
+    line-height: var(--h3Height);
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+#lowfi p {
+    font-family: var(--p1Font);
+    color: var(--p1Color);
+    font-size: var(--p1Size);
+    line-height: var(--p1Height);
+}
+
+#UX {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F5F5F5;
+    padding: 30px;
+    margin: 20px;
+}
+
+#UX .text-container {
+    max-width: 900px;
+    margin-bottom: 30px;
+}
+
+#UX .p2 {
+    font-family: var(--projectTitleFont);
+    color: var(--projectTitleColor);
+    font-size: var(--projectTitleSize);
+    line-height: var(--projectTitleHeight);
+    text-align: center;
+    margin-bottom: 10px; 
+}
+
+#UX h3 {
+    font-family: var(--h3Font);
+    color: var(--h3Color);
+    font-size: var(--h3Size);
+    line-height: var(--h3Height);
+    text-align: center;
+    margin-bottom: 10px; 
+}
+
+#UX p {
+    font-family: var(--p1Font);
+    color: var(--p1Color);
+    font-size: var(--p1Size);
+    line-height: var(--p1Height);
+    text-align: center;
+}
+
+#UX .image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust as needed */
+}
+
+#UX .image-container img {
+    width: 150px; /* Adjust as needed */
+    height: auto;
+}
+
+#FinalScreen {
+    background-color: #ebebeb;
+    padding: 20px;
+}
+
+#FinalScreen .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#FinalScreen .text-container {
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+#FinalScreen .p2 {
+    font-size: 30px;
+    color: #1e1e1e;
+    margin-bottom: 10px;
+}
+
+#FinalScreen h3 {
+    font-size: 24px;
+    color: #1e1e1e;
+    margin-bottom: 10px;
+}
+
+#FinalScreen p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+#FinalScreen .image-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust as needed */
+    overflow-x: auto;
+    scrollbar-width: thin;
+}
+
+#FinalScreen .image-row img {
+    width: 200px; /* Adjust as needed */
+    height: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+  }
+  
+  .home-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+  }
+  
+  .home-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .home-button:active {
+    background-color: #004085;
+  }
+
+  header {
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    padding: 20px 15%; /* Adjust the second value for horizontal padding */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px; /* Add space at the top */
+    margin-right: 20px;
+    margin-left: 20px;
+}
+  
+  
+  .animated-title {
+    font-size: 2em;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6;
+    }
+  }
+
+  section {
+    margin: 20px 20px;
+    border-radius: 15px;
+    overflow: hidden; /* To ensure the content also respects the border radius */
+}
+
+/* Then adjust the margin for the first and last section if they are too close to the page edge */
+section:first-child {
+    margin-top: 40px;
+}
+
+section:last-child {
+    margin-bottom: 40px;
+}
+
+footer {
+    background: #6D99A7;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+    margin: 20px 20px;
+    border-radius: 15px;
+    overflow: hidden; /* To ensure the content also respects the border radius */
+}  
